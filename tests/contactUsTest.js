@@ -4,7 +4,7 @@ beforeEach('Accessing Contact Us URL', function() {
     browser.url('/Contact-Us/contactus.html');
 });
 
-describe('WebdriverUni: Test Contact Us Page', function() {
+describe('WebdriverUni: Test Contact Us Page', function() {     //Following POM Phase 1
 
     var res_data = request('GET', 'https://jsonplaceholder.typicode.com/users');
     var contactusDetails = JSON.parse(res_data.getBody().toString('utf8'));
