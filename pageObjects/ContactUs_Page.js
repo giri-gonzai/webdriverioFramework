@@ -8,7 +8,7 @@ class ContactUs_Page {                                      //Creating POM Class
     get emailAddress() {
         return $("[name='email']");
     }
-    get messageField() {
+    get comments() {
         return $("[name='message']");
     }
     get submitButton() {

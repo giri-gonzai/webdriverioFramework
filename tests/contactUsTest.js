@@ -1,4 +1,5 @@
-var ContactUs_Page = require("./pageObjects/ContactUs_Page.js");
+var ContactUs_Page = require("../pageObjects/ContactUs_Page.js");
+const request = require('request');
 
 beforeEach('Accessing Contact Us URL', function() {
     browser.url('/Contact-Us/contactus.html');
@@ -10,31 +11,31 @@ describe('WebdriverUni: Test Contact Us Page', function() {     //Following POM 
     var contactusDetails = JSON.parse(res_data.getBody().toString('utf8'));
 
     function setFirstName(firstName){ 
-        return browser.setValue(firstNameSelector, firstName);
+        return ContactUs_Page.firstName.setValue(firstName);
     } 
-    function setLastName(LastName){
-        return browser.setValue(lastNameSelector, LastName);
+    function setLastName(lastName){
+        return ContactUs_Page.lastName.setValue(lastName);
     }
     function setEmailAddress(emailAddress){
-        return browser.setValue(emailAddressSelector, emailAddress);
+        return ContactUs_Page.emailAddress.setValue(emailAddress);
     }
-    function setMessage(messageBox){
-        return browser.setValue(messageSelector, messageBox);
+    function setMessage(comments){
+        return ContactUs_Page.comments.setValue(comments);
     }
     function clickSubmitButton(){
-        return browser.click(submitButtonSelector);
+        return ContactUs_Page.submitButton.click();
     }
     function confirmSuccessfullSubmission() {
         var validateSubmissionHeader = browser.waitUntil(function() {
-            return browser.getText(successfulSubmissionSelector) == 'Thank You for your Message!'
+            return ContactUs_Page.successfulSubmission.getText() == 'Thank You for your Message!'
         }, 3000);
         expect(validateSubmissionHeader, 'Successful Submission Message does not Exist!').to.be.true;
     }
     function confirmUnsuccessfullSubmission() {
         var validateSubmissionHeader = browser.waitUntil(function() {
-            return browser.getText(unsuccessfulSubmissionSelector) == 'Error: all fields are required'
+            return ContactUs_Page.unsuccessfulSubmission.getText() == 'Error: all fields are required'
         }, 3000);
-        expect(browser.getText(unsuccessfulSubmissionSelector)).to.include('Error: all fields are required');
+        expect(ContactUs_Page.unsuccessfulSubmission.getText()).to.include('Error: all fields are required');
     }
 
    contactusDetails.forEach(function (contactusJSONDetails) {    
