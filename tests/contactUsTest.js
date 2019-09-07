@@ -1,14 +1,11 @@
 var ContactUs_Page = require("../pageObjects/ContactUs_Page.js");
-const request = require('request');
+
 
 beforeEach('Accessing Contact Us URL', function() {
     browser.url('/Contact-Us/contactus.html');
 });
 
 describe('WebdriverUni: Test Contact Us Page', function() {     //Following POM Phase 1
-
-    var res_data = request('GET', 'https://jsonplaceholder.typicode.com/users');
-    var contactusDetails = JSON.parse(res_data.getBody().toString('utf8'));
 
     function setFirstName(firstName){ 
         return ContactUs_Page.firstName.setValue(firstName);
@@ -37,48 +34,40 @@ describe('WebdriverUni: Test Contact Us Page', function() {     //Following POM 
         }, 3000);
         expect(ContactUs_Page.unsuccessfulSubmission.getText()).to.include('Error: all fields are required');
     }
-
-   contactusDetails.forEach(function (contactusJSONDetails) {    
+   
     it('Positive Test: Should be able to submit a successful submission via contact us form', function(done) {
         
-        setFirstName(contactusJSONDetails.username);
-        setLastName(contactusJSONDetails.name);
-        setEmailAddress(contactusJSONDetails.email);
-        setMessage(contactusJSONDetails.address.city);
+        setFirstName('GG');
+        setLastName('Gogo');
+        setEmailAddress('gg@mail.com');
+        setMessage('NY');
         clickSubmitButton();
         confirmSuccessfullSubmission();         
         });
-    });
 
-    contactusDetails.forEach(function (contactusJSONDetails) { 
     it('Negative Test: Should not be able to submit a successful submission via contact us form as all field are required', function(done) {
     
-        setFirstName(contactusJSONDetails.username);
-        setLastName(contactusJSONDetails.name);
-        setEmailAddress(contactusJSONDetails.email);
+        setFirstName('GG');
+        setLastName('Gogo');
+        setEmailAddress('gg@mail.com');
         clickSubmitButton();
         confirmUnsuccessfullSubmission();
         });
-    });
 
-    contactusDetails.forEach(function (contactusJSONDetails) { 
     it('Negative Test: Should not be able to submit a successful submission via contact us form as all field are required', function(done) {
 
-        setFirstName(contactusJSONDetails.username);
-        setEmailAddress(contactusJSONDetails.email);
+        setFirstName('GG');
+        setEmailAddress('gg@mail.com');
         clickSubmitButton();
         confirmUnsuccessfullSubmission();
         });
-    });
 
-    contactusDetails.forEach(function (contactusJSONDetails) { 
     it('Negative Test: Should not be able to submit a successful submission via contact us form as all field are required', function(done) {
        
-        setLastName(contactusJSONDetails.name);
-        setEmailAddress(contactusJSONDetails.email);
-        setMessage(contactusJSONDetails.address.city);
+        setLastName('Gogo');
+        setEmailAddress('gg@mail.com');
+        setMessage('NY');
         clickSubmitButton();
         confirmUnsuccessfullSubmission();
         }); 
-    });
 });
