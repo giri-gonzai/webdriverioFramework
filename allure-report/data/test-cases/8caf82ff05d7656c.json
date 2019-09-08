@@ -1,0 +1,47 @@
+{
+  "uid" : "8caf82ff05d7656c",
+  "name" : "Test 1: Click on the button ASAP",
+  "fullName" : "Test: Button clickable after the Ajax Loader has been successfully executed with pause command.Test 1: Click on the button ASAP",
+  "historyId" : "ec20d94037285c555b327be74c2d92a6",
+  "time" : {
+    "start" : 1567923331938,
+    "stop" : 1567923331939,
+    "duration" : 1
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Test ignored",
+  "statusTrace" : "undefined",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Test: Button clickable after the Ajax Loader has been successfully executed with pause command"
+  }, {
+    "name" : "testClass",
+    "value" : "Test: Button clickable after the Ajax Loader has been successfully executed with pause command"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test 1: Click on the button ASAP"
+  }, {
+    "name" : "package",
+    "value" : "Test: Button clickable after the Ajax Loader has been successfully executed with pause command"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8caf82ff05d7656c.json",
+  "parameterValues" : [ ]
+}

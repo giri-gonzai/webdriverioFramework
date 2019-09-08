@@ -1,0 +1,29 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Test 1: Click on the button ASAP",
+    "uid" : "8caf82ff05d7656c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1567923331938,
+      "stop" : 1567923331939,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Test 2: Click on the button after 7 Seconds",
+    "uid" : "25f4b59234931b3d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1567923331941,
+      "stop" : 1567923349134,
+      "duration" : 17193
+    },
+    "flaky" : false,
+    "parameters" : [ "chrome" ]
+  } ]
+}

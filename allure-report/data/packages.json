@@ -1,0 +1,33 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Test: Button clickable after the Ajax Loader has been successfully executed with pause command",
+    "children" : [ {
+      "name" : "Test 1: Click on the button ASAP",
+      "uid" : "8caf82ff05d7656c",
+      "parentUid" : "bb6dcb7a1507509cf6c5650a157fac9e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1567923331938,
+        "stop" : 1567923331939,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Test 2: Click on the button after 7 Seconds",
+      "uid" : "25f4b59234931b3d",
+      "parentUid" : "bb6dcb7a1507509cf6c5650a157fac9e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567923331941,
+        "stop" : 1567923349134,
+        "duration" : 17193
+      },
+      "flaky" : false,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "bb6dcb7a1507509cf6c5650a157fac9e"
+  } ]
+}

@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1567923331936' stop='1567923349136'>
+    <name>Test: Button clickable after the Ajax Loader has been successfully executed with pause command</name>
+    <title>Test: Button clickable after the Ajax Loader has been successfully executed with pause command</title>
+    <test-cases>
+        <test-case start='1567923331938' status='pending' stop='1567923331939'>
+            <name>Test 1: Click on the button ASAP</name>
+            <title>Test 1: Click on the button ASAP</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1567923331941' status='passed' stop='1567923349134'>
+            <name>Test 2: Click on the button after 7 Seconds</name>
+            <title>Test 2: Click on the button after 7 Seconds</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Users\\Admin\\Desktop\\webdriverioFramework\\tests\\ajaxClickTest.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

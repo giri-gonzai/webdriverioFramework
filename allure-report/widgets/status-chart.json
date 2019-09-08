@@ -1,0 +1,21 @@
+[ {
+  "uid" : "8caf82ff05d7656c",
+  "name" : "Test 1: Click on the button ASAP",
+  "time" : {
+    "start" : 1567923331938,
+    "stop" : 1567923331939,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "25f4b59234931b3d",
+  "name" : "Test 2: Click on the button after 7 Seconds",
+  "time" : {
+    "start" : 1567923331941,
+    "stop" : 1567923349134,
+    "duration" : 17193
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
