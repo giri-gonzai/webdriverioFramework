@@ -1,7 +1,0 @@
-[ {
-  "values" : [ "{\"maxInstances\":5,\"browserName\":\"chrome\"}" ],
-  "name" : "capabilities"
-}, {
-  "values" : [ "[\"C:\\\\Users\\\\Admin\\\\Desktop\\\\webdriverioFramework\\\\tests\\\\ajaxClickTest.js\"]" ],
-  "name" : "spec files"
-} ]
