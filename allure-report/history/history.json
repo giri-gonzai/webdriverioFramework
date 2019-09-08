@@ -9,32 +9,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "25f4b59234931b3d",
+      "uid" : "4117cd81dde8e07c",
       "status" : "passed",
       "time" : {
-        "start" : 1567923331941,
-        "stop" : 1567923349134,
-        "duration" : 17193
+        "start" : 1567925300688,
+        "stop" : 1567925315120,
+        "duration" : 14432
       }
     } ]
   },
-  "ec20d94037285c555b327be74c2d92a6" : {
+  "fba75f8b6e2cfd9bd23746e04e3345b4" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
-      "skipped" : 1,
+      "broken" : 1,
+      "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8caf82ff05d7656c",
-      "status" : "skipped",
-      "statusDetails" : "Test ignored",
+      "uid" : "fa4522a7f1adb6f4",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
       "time" : {
-        "start" : 1567923331938,
-        "stop" : 1567923331939,
-        "duration" : 1
+        "start" : 1567925296097,
+        "stop" : 1567925300686,
+        "duration" : 4589
       }
     } ]
   }

@@ -1,5 +1,5 @@
 describe('Test: Button clickable after the Ajax Loader has been successfully executed with pause command', function() {
-    it.skip('Test 1: Click on the button ASAP', function(done) {
+    it('Test 1: Click on the button ASAP', function(done) {
         browser.url('/Ajax-Loader/index.html');
         browser.click("#button1");
     })
