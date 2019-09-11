@@ -1,11 +1,11 @@
 var ContactUs_Page = require("../pageObjects/ContactUs_Page.js");
 
-
 beforeEach('Accessing Contact Us URL', function() {
     browser.url('/Contact-Us/contactus.html');
 });
 
 describe('WebdriverUni: Test Contact Us Page', function() {     //Following POM Phase 1
+
     it('Positive Test: Should be able to submit a successful submission via contact us form', function(done) {  
         ContactUs_Page.submitAllInformationContactUsForm('GG', 'Gogo', 'gg@mail.com', 'NY');
         });

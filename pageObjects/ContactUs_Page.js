@@ -63,4 +63,5 @@ class ContactUs_Page {                                      //Creating POM Class
         expect(browser.getText(unsuccessfulSubmission)).to.include('Error: all fields are required');
     }
 }
+
 module.exports = new ContactUs_Page();
