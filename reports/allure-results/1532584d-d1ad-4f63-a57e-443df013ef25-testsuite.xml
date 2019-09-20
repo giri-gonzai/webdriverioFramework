@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1567927171044' stop='1567927190081'>
+    <name>Test: Button clickable after the Ajax Loader has been successfully executed with pause command</name>
+    <title>Test: Button clickable after the Ajax Loader has been successfully executed with pause command</title>
+    <test-cases>
+        <test-case start='1567927171046' status='broken' stop='1567927175698'>
+            <name>Test 1: Click on the button ASAP</name>
+            <title>Test 1: Click on the button ASAP</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Users\\Admin\\Desktop\\webdriverioFramework\\tests\\ajaxClickTest.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='30839138-9b8c-404f-a610-3e515cd2824e-attachment.png' type='image/png' size='14520'/>
+            </attachments>
+            <failure>
+                <message>element not interactable</message>
+                <stack-trace>Error: An element command could not be completed because the element is not visible on the page.
+                    at elementIdClick("0.6471910394248563-1") - C:\Users\Admin\Desktop\webdriverioFramework\node_modules\webdriverio\build\lib\commands\click.js:20:22</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1567927175701' status='passed' stop='1567927190079'>
+            <name>Test 2: Click on the button after 7 Seconds</name>
+            <title>Test 2: Click on the button after 7 Seconds</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Users\\Admin\\Desktop\\webdriverioFramework\\tests\\ajaxClickTest.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
