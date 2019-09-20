@@ -10,17 +10,13 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "@wdio/cli": "^5.13.1",
     "chai": "^4.2.0",
     "del": "^5.1.0",
     "mocha": "^6.2.0",
     "selenium-standalone": "^6.15.3",
     "sync-request": "^6.1.0",
-    "wdio-allure-reporter": "^0.8.3",
-    "wdio-json-reporter": "^0.4.0",
-    "wdio-junit-reporter": "^0.4.4",
-    "wdio-mocha-framework": "^0.6.4",
-    "wdio-selenium-standalone-service": "0.0.12",
-    "webdriverio": "^4.14.4"
+    "webdriverio": "^5.13.1"
   },
   "keywords": []
 }
