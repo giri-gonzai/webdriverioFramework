@@ -13,6 +13,7 @@ describe('WebdriverUni: Test Contact Us Page', ()  => {     //Following POM Phas
         expect(ContactUs_Page.successfulSubmissionText).to.equal("Thank You for your Message!");
         } catch(err) {
             console.log("Exception: " + err);
+            assert.fail();
         }
         });
 
@@ -26,6 +27,7 @@ describe('WebdriverUni: Test Contact Us Page', ()  => {     //Following POM Phas
         expect(ContactUs_Page.unsuccessfulSubmissionText).to.have.string("Error: all fields are required");
         } catch(err) {
             console.log("Exception: " + err);
+            assert.fail();
         }
         });
 
@@ -38,6 +40,7 @@ describe('WebdriverUni: Test Contact Us Page', ()  => {     //Following POM Phas
             expect(ContactUs_Page.unsuccessfulSubmissionText).to.have.string("Error: all fields are required");
             } catch(err) {
                 console.log("Exception: " + err);
+                assert.fail();
             }
         });
 
@@ -51,6 +54,7 @@ describe('WebdriverUni: Test Contact Us Page', ()  => {     //Following POM Phas
             expect(ContactUs_Page.unsuccessfulSubmissionText).to.have.string("Error: all fields are required");
             } catch(err) {
                 console.log("Exception: " + err);
+                assert.fail();
             }
         }); 
 });
