@@ -57,7 +57,6 @@ class ContactUs_Page {                                      //Creating POM Class
             this.comments.setValue(comments);
         }
         this.submitButton.click();
-        this.confirmSuccessfullSubmission();
     }
 }
 
