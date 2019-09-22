@@ -20,6 +20,7 @@
     "chai": "^4.2.0",
     "chromedriver": "^77.0.0",
     "del": "^5.1.0",
+    "loglevel-plugin-prefix": "^0.8.4",
     "mocha": "^6.2.0",
     "selenium-standalone": "^6.15.3",
     "sync-request": "^6.1.0",
