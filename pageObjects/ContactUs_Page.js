@@ -14,6 +14,18 @@ class ContactUs_Page {                                      //Creating POM Class
     get submitButton() {
         return $("[type='submit']");
     }
+    get successfulSubmission() {
+        return $("#contact_reply");
+    }
+    get unsuccessfulSubmission() {
+        return $("body");
+    }
+    get successfulSubmissionText() {
+        return this.successfulSubmission.getText();
+    }
+    get unsuccessfulSubmissionText() {
+        return this.unsuccessfulSubmission.getText();
+    }
 
     setFirstName(firstName){                           //Advanced POM Framwork Abstraction
         return this.firstName.setValue(firstName);
@@ -46,21 +58,6 @@ class ContactUs_Page {                                      //Creating POM Class
         }
         this.submitButton.click();
         this.confirmSuccessfullSubmission();
-    }
-
-    confirmSuccessfullSubmission() {
-        var successfulSubmission = "#contact_reply";
-        var validateSubmissionHeader = browser.waitUntil(function() {
-            return browser.getText(successfulSubmission) == 'Thank You for your Message!'
-    }, 3000);
-        expect(validateSubmissionHeader, 'Successful Submission Message does not Exist!').to.be.true;
-    }
-    confirmUnsuccessfullSubmission() {
-        var unsuccessfulSubmission = "body";
-        var validateSubmissionHeader = browser.waitUntil(function() {
-            return browser.getText(unsuccessfulSubmission) == 'Error: all fields are required'
-    }, 3000);
-        expect(browser.getText(unsuccessfulSubmission)).to.include('Error: all fields are required');
     }
 }
 
